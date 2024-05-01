@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Build and upload counter.
+    name: Build and upload.
     strategy:
       fail-fast: false
       matrix:
@@ -28,20 +28,20 @@ jobs:
 
       - name: Strip Debug Symbols
         run: |
-          cd /Users/runner/work/Counter-Super-Simple-Rewrite/Counter-Super-Simple-Rewrite/build/ios/iphoneos/Runner.app
+          cd /Users/runner/work/Gamertags-Super-Simple/Gamertags-Super-Simple/build/ios/iphoneos/Runner.app
           find . -name "*.dSYM" -exec rm -rf {} \;
         
       - name: Convert to IPA 1
         run: mkdir -p Payload
              
       - name: Convert to IPA 2
-        run: cp -R /Users/runner/work/Counter-Super-Simple-Rewrite/Counter-Super-Simple-Rewrite/build/ios/iphoneos/Runner.app Payload/
+        run: cp -R /Users/runner/work/Gamertags-Super-Simple/Gamertags-Super-Simple/build/ios/iphoneos/Runner.app Payload/
 
       - name: Convert to IPA 3
-        run: zip -r Counter.ipa Payload
+        run: zip -r Gamertags.ipa Payload
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
         with:
           name: iOS Build
-          path: ./Counter.ipa
+          path: ./Gamertags.ipa
