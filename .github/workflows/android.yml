@@ -1,0 +1,30 @@
+name: Android Build
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Build Android Application
+        run: flutter build apk --release
+
+      # Corrected path to build output
+      - name: List Build Directory
+        run: ls build/app/outputs/flutter-apk/
+
+      # Upload the build artifact (the release APK file)
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: android-build
+          path: build/app/outputs/flutter-apk/
