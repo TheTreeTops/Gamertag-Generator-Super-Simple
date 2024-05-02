@@ -141,3 +141,4 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
     super.dispose();
   }
 }
+//Should be stable now.
