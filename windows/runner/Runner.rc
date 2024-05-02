@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "study" "\0"
+            VALUE "CompanyName", "com.blustik" "\0"
+            VALUE "FileDescription", "Gamertag Generator - Super Simple" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "study" "\0"
+            VALUE "InternalName", "Gamertag Generator - Super Simple" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "study.exe" "\0"
-            VALUE "ProductName", "study" "\0"
+            VALUE "OriginalFilename", "gamertag_generator.exe" "\0"
+            VALUE "ProductName", "Gamertag Generator - Super Simple" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

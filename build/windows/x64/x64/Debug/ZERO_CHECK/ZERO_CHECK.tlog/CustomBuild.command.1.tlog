@@ -1,0 +1,10 @@
+^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\GAMERTAGS-SUPER-SIMPLE\BUILD\WINDOWS\X64\CMAKEFILES\0286F46BFEDF5BAF06CDFEA359D3FB4C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/windows -BC:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/build/windows/x64/study.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
