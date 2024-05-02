@@ -1,6 +1,6 @@
-^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\STUDY-SUPER-SIMPLE\STUDY\BUILD\WINDOWS\X64\CMAKEFILES\CE522BD140519AE28D66D53524E324F3\FLUTTER_WINDOWS.DLL.RULE
+^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\GAMERTAGS-SUPER-SIMPLE\BUILD\WINDOWS\X64\CMAKEFILES\903EB76C457F59A37287ED5395381A95\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Stephen\dev\flutter PROJECT_DIR=C:\Users\Stephen\Documents\GitHub\Study-Super-Simple\study FLUTTER_ROOT=C:\Users\Stephen\dev\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Stephen\Documents\GitHub\Study-Super-Simple\study\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Stephen\Documents\GitHub\Study-Super-Simple\study FLUTTER_TARGET=C:\Users\Stephen\Documents\GitHub\Study-Super-Simple\study\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9lNzZjOTU2NDk4ODQxZTFhYjQ1ODU3N2QzODkyMDAzZTU1M2U0ZjNjLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\Stephen\Documents\GitHub\Study-Super-Simple\study\.dart_tool\package_config.json C:/Users/Stephen/dev/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Stephen\dev\flutter PROJECT_DIR=C:\Users\Stephen\Documents\GitHub\Gamertags-Super-Simple FLUTTER_ROOT=C:\Users\Stephen\dev\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Stephen\Documents\GitHub\Gamertags-Super-Simple\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Stephen\Documents\GitHub\Gamertags-Super-Simple FLUTTER_TARGET=C:\Users\Stephen\Documents\GitHub\Gamertags-Super-Simple\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9lNzZjOTU2NDk4ODQxZTFhYjQ1ODU3N2QzODkyMDAzZTU1M2U0ZjNjLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\Stephen\Documents\GitHub\Gamertags-Super-Simple\.dart_tool\package_config.json C:/Users/Stephen/dev/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\STUDY-SUPER-SIMPLE\STUDY\BUILD\WINDOWS\X64\CMAKEFILES\41E2B8E316C6BD0D0037ED0F8DFCBA62\FLUTTER_ASSEMBLE.RULE
+^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\GAMERTAGS-SUPER-SIMPLE\BUILD\WINDOWS\X64\CMAKEFILES\C93ECA397860D29608550611BB826632\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\STUDY-SUPER-SIMPLE\STUDY\WINDOWS\FLUTTER\CMAKELISTS.TXT
+^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\GAMERTAGS-SUPER-SIMPLE\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/windows -BC:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/build/windows/x64 --check-stamp-file C:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/windows -BC:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/build/windows/x64 --check-stamp-file C:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/windows/runner
+# Install script for directory: C:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/windows/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,6 +1,6 @@
-^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\STUDY-SUPER-SIMPLE\STUDY\WINDOWS\CMAKELISTS.TXT
+^C:\USERS\STEPHEN\DOCUMENTS\GITHUB\GAMERTAGS-SUPER-SIMPLE\WINDOWS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/windows -BC:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/build/windows/x64 --check-stamp-file C:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/build/windows/x64/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/windows -BC:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/build/windows/x64 --check-stamp-file C:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/build/windows/x64/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

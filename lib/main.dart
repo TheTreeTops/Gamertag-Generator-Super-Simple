@@ -73,23 +73,23 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-        Flexible(child: _buildKeywordTextField()),
+        _buildKeywordTextField(),
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Center(child: Text(username, style: TextStyle(fontSize: MediaQuery.of(context).size.height * 0.04))), // Centered username
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
-          child: Flexible(child: _buildGenerateButton()),
+          child: _buildGenerateButton(),
         ),
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
-          child: Flexible(child: _buildCopyButton()),
+          child: _buildCopyButton(),
         ),
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
-          child: Flexible(child: _buildGoBackButton()),
+          child: _buildGoBackButton(),
         ),
       ],
     );

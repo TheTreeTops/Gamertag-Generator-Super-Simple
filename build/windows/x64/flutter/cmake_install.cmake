@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Stephen/Documents/GitHub/Study-Super-Simple/study/windows/flutter
+# Install script for directory: C:/Users/Stephen/Documents/GitHub/Gamertags-Super-Simple/windows/flutter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
