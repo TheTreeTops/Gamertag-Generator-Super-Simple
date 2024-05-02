@@ -1,20 +1,29 @@
 name: Web Build
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main  # replace with your default branch if not 'main'
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Clone Repository
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set Up Flutter
-        uses: subosito/flutter-action@v1
-        with:
-          channel: stable
+      - name: Setup Dart SDK
+        uses: dart-lang/setup-dart@v1.2
 
-      - name: Build Web Application
-        run: flutter build web --release
+      - name: Install Flutter
+        run: |
+          git clone https://github.com/flutter/flutter.git --depth 1 -b stable
+          echo "$GITHUB_WORKSPACE/flutter/bin" >> $GITHUB_PATH
+
+      - name: Build Flutter web
+        run: |
+          flutter pub get
+          flutter build web
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
