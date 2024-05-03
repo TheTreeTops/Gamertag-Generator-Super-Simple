@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return CupertinoApp(
       home: CupertinoPageScaffold(
         navigationBar: CupertinoNavigationBar(
-          middle: Text('Gamertag Generator'),
+          middle: Text('Gamertag Generator - Super Simple'),
         ),
         child: SafeArea(
           child: Padding(
