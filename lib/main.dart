@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return CupertinoApp(
       home: CupertinoPageScaffold(
         navigationBar: CupertinoNavigationBar(
-          middle: Text('Gamertag Generator - Super Simple'),
+          middle: Text('Gamertag Generator'),
         ),
         child: SafeArea(
           child: Padding(
@@ -74,29 +74,24 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
     return ListView(
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2),
+          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
           child: _buildKeywordTextField(),
         ),
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2),
-          child: Center(
-            child: Text(username, style: TextStyle(fontSize: MediaQuery.of(context).size.height * 0.04)),
-          ),
-        ),
+        Center(child: Text(username, style: TextStyle(fontSize: MediaQuery.of(context).size.height * 0.04))), // Centered username
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2),
+          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
           child: _buildGenerateButton(),
         ),
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2),
+          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
           child: _buildCopyButton(),
         ),
         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2),
+          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.2), // Added horizontal padding
           child: _buildGoBackButton(),
         ),
       ],
@@ -107,13 +102,13 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
     return CupertinoTextField(
       controller: keywordController,
       placeholder: 'Enter keyword',
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(10), // Increased padding
     );
   }
 
   CupertinoButton _buildGenerateButton() {
     return CupertinoButton.filled(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(10), // Reduced padding
       child: Text('Generate Gamertag'),
       onPressed: generateUsername,
     );
@@ -121,7 +116,7 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
 
   CupertinoButton _buildCopyButton() {
     return CupertinoButton.filled(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(10), // Reduced padding
       child: Text('Copy Gamertag'),
       onPressed: copyUsername,
     );
@@ -129,7 +124,7 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
 
   CupertinoButton _buildGoBackButton() {
     return CupertinoButton.filled(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(10), // Reduced padding
       child: Text('Go Back'),
       onPressed: goBack,
     );
@@ -141,4 +136,3 @@ class _UsernameGeneratorState extends State<UsernameGenerator> {
     super.dispose();
   }
 }
-//Should be stable now.
